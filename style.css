@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--siteBackgroundColor);
+}
+
+header {
+    background-color: hsla(0, 100%, 98.04%, 1);
+    height: 66px;
+}
+
+header * {
+    color: black;
+}
+
+header .logo {
+    float: left;
+    height: inherit;
+    margin-left: 20px;
+}
+
+header .logo-text{
+    margin: 10px;
+    font-family: "Montserrat", sans-serif;}
+
+
+header ul {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+header ul li {
+    float: left;
+    position: relative;
+}
+
+header ul li ul {
+    position: absolute;
+    top: 66px;
+    right: 0px;
+    width: 180px;
+}
+
+header ul li ul li {
+    width: 100%;
+}
+
+header ul li ul li a{
+    padding: 5px;
+    color: #444;
+    background-color: white;
+}
+
+header ul li ul li a.Logout{
+    color: red;
+}
+header ul li a {
+    display: block;
+    padding: 20px;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+header ul li a:hover{
+    background: rgb(248, 230, 230);
+    transition: 0.5s;
+}
+
+
+header .menu-toggle{
+    display: none;
+}
